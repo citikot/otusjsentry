@@ -13,3 +13,10 @@
 пользователя.
 */
 
+const currentDateString = prompt ("Введите дату в формате ДД.ММ.ГГГГ:");
+const currentDate = Date.parse(currentDateString);
+const currentDay = new Date(currentDate).getDay();
+
+console.log(currentDay);
+
+
